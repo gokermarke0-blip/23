@@ -147,20 +147,7 @@
                 <div class="count-box"><span id="hours" class="count-num">15</span><span style="font-size:11px; opacity:0.6;">ساعة</span></div>
                 <div class="count-box"><span id="mins" class="count-num">30</span><span style="font-size:11px; opacity:0.6;">دقيقة</span></div>
                 <div class="count-box"><span id="secs" class="count-num">5</span><span style="font-size:11px; opacity:0.6;">ثانية</span> </div>
-            </div>
-<div class="music-bar">
-    <div style="flex:1">
-        <div style="font-size:15px; font-weight:700;">الأغنية الجديدة</div>
-        <div style="font-size:11px; opacity:0.5;">بتوصفنا 🎵</div>
-    </div>
-    <iframe width="100%" height="120" 
-        src="https://www.youtube.com/embed/GLxWc7EUACQ" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-    </iframe>
-</div>
+            
 
             <div class="promises-section">
                 <div class="promise-item"><i class="fa-solid fa-hand-holding-heart"></i> <span>هفضل سندك في كل وقت</span></div>
@@ -174,7 +161,14 @@
                     <div class="note-back">إنت أجمل نعمة في حياتي ❤️</div>
                 </div>
                 <div class="note-card" onclick="this.classList.toggle('flipped')">
-                    <div class="note-front"><i class="fa-solid fa-star"></i></div>
+                    <div <div class="music-bar">
+    <div class="play-icon" onclick="toggleMusic()"><i id="pIcon" class="fa-solid fa-play"></i></div>
+    <div style="flex:1">
+        <div style="font-size:15px; font-weight:700;">انت هديه ربنا ليا</div>
+        <div style="font-size:11px; opacity:0.5;">الأغنية اللي بتوصفنا 🎵</div>
+    </div>
+    <audio id="loveSong" loop="" src="https://files.catbox.moe/ll4n4b.mp3"></audio>
+                    </div>class="note-front"><i class="fa-solid fa-star"></i></div>
                     <div class="note-back">وجودك بيخلي الدنيا منورة ✨</div>
                 </div>
                 <div class="note-card" onclick="this.classList.toggle('flipped')">
@@ -242,7 +236,7 @@
         }
 
 function startCounter() {
-    const start = new Date("2025-04-15T00:00:00"); // هنا التاريخ الجديد
+   const start = new Date("2024-12-26T22:00:00");
     setInterval(() => {
         const diff = new Date() - start;
 
